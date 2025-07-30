@@ -69,7 +69,7 @@ function App() {
         setLoadingProgress(20);
         setLoadingMessage('Using sample data for demonstration');
         
-        const response = await fetch('/demo-data.json');
+        const response = await fetch(`${process.env.PUBLIC_URL}/demo-data.json`);
         if (!response.ok) {
           throw new Error('Demo data not available');
         }
