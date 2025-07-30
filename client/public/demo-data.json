@@ -1,0 +1,190 @@
+{
+  "subnet": {
+    "netuid": 8,
+    "name": "Subnet 8",
+    "lastUpdated": "2025-01-30T12:00:00Z"
+  },
+  "miners": [
+    {
+      "uid": 1,
+      "hotkey": "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+      "coldkey": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+      "stake": "0",
+      "trust": "0.95",
+      "consensus": "0.92",
+      "incentive": "0.88",
+      "dividends": "0.50959029526207370108",
+      "emission": "75425923846",
+      "active": true,
+      "validator_permit": true,
+      "daily_reward": "1508518476920",
+      "axon_info": {
+        "ip": "34.65.245.134",
+        "port": 8091,
+        "protocol": 4
+      },
+      "location": {
+        "country": "Switzerland",
+        "city": "Zurich",
+        "lat": 47.3595,
+        "lon": 8.6356,
+        "region": "Zurich",
+        "isp": "Google LLC",
+        "organization": "Google Cloud (europe-west6)",
+        "asn": "AS396982 Google LLC",
+        "asname": "GOOGLE-CLOUD-PLATFORM",
+        "hostingType": "Hosting/Cloud",
+        "isProxy": false,
+        "isMobile": false,
+        "isHosting": true,
+        "timezone": "Europe/Zurich"
+      }
+    },
+    {
+      "uid": 15,
+      "hotkey": "5GH3k8zFn9fQVx7F3j8YrS9MQvX5L2zN8QpRyT4eW6nPqMvZ",
+      "coldkey": "5ERz8P9QN5xKj3F7mY2nS8vB4L9zN6qW3eR7yT1uI5oP8kLm",
+      "stake": "150.5",
+      "trust": "0.78",
+      "consensus": "0.82",
+      "incentive": "0.75",
+      "dividends": "0.0",
+      "emission": "45678912345",
+      "active": true,
+      "validator_permit": false,
+      "daily_reward": "913578246800",
+      "axon_info": {
+        "ip": "185.123.45.67",
+        "port": 8092,
+        "protocol": 4
+      },
+      "location": {
+        "country": "Germany",
+        "city": "Frankfurt",
+        "lat": 50.1109,
+        "lon": 8.6821,
+        "region": "Hesse",
+        "isp": "Deutsche Telekom AG",
+        "organization": "Residential Internet",
+        "asn": "AS3320 Deutsche Telekom AG",
+        "asname": "DTAG",
+        "hostingType": "Residential",
+        "isProxy": false,
+        "isMobile": false,
+        "isHosting": false,
+        "timezone": "Europe/Berlin"
+      }
+    },
+    {
+      "uid": 42,
+      "hotkey": "5FpQ9X7mN3kL8jY2nS5rT6vB9qW4eR8tY1uI7oP3kMzN5xLm",
+      "coldkey": "5CzR8P5qN3xKj9F2mY6nS7vB1L8zN3qW5eR4yT2uI8oP7kMn",
+      "stake": "89.2",
+      "trust": "0.91",
+      "consensus": "0.87",
+      "incentive": "0.83",
+      "dividends": "0.0",
+      "emission": "67891234567",
+      "active": true,
+      "validator_permit": false,
+      "daily_reward": "1357824690000",
+      "axon_info": {
+        "ip": "192.168.1.100",
+        "port": 8093,
+        "protocol": 4
+      },
+      "location": {
+        "country": "United States",
+        "city": "New York",
+        "lat": 40.7128,
+        "lon": -74.0060,
+        "region": "New York",
+        "isp": "Verizon Communications",
+        "organization": "Residential Broadband",
+        "asn": "AS701 Verizon Business",
+        "asname": "VERIZON-BUSINESS",
+        "hostingType": "Residential",
+        "isProxy": false,
+        "isMobile": false,
+        "isHosting": false,
+        "timezone": "America/New_York"
+      }
+    }
+  ],
+  "analysis": {
+    "totalMiners": 256,
+    "totalUniqueIPs": 74,
+    "concentrationLevel": "Unconcentrated",
+    "hhi": 395,
+    "adjustedHhi": 429,
+    "geographicDistribution": {
+      "United States": 45,
+      "Germany": 32,
+      "Canada": 28,
+      "United Kingdom": 19,
+      "Switzerland": 15,
+      "Others": 117
+    },
+    "ipClusters": [
+      {
+        "ip": "34.65.245.134",
+        "location": "Zurich, Switzerland",
+        "count": 1,
+        "hostingType": "Hosting/Cloud",
+        "uids": [1]
+      },
+      {
+        "ip": "185.123.45.67", 
+        "location": "Frankfurt, Germany",
+        "count": 2,
+        "hostingType": "Residential",
+        "uids": [15, 67]
+      }
+    ],
+    "hostingDistribution": [
+      {
+        "type": "Residential",
+        "count": 145,
+        "percentage": "56.6%"
+      },
+      {
+        "type": "Hosting/Cloud",
+        "count": 89,
+        "percentage": "34.8%"
+      },
+      {
+        "type": "Data Center",
+        "count": 22,
+        "percentage": "8.6%"
+      }
+    ],
+    "asnDistribution": [
+      {
+        "asn": "AS3320 Deutsche Telekom AG",
+        "count": 32,
+        "percentage": "12.5%",
+        "hostingType": "Mixed"
+      },
+      {
+        "asn": "AS701 Verizon Business", 
+        "count": 28,
+        "percentage": "10.9%",
+        "hostingType": "Residential"
+      }
+    ],
+    "topOwners": [
+      {
+        "coldkey": "5EjfvkK5...",
+        "count": 3,
+        "percentage": "1.2%"
+      },
+      {
+        "coldkey": "5ERz8P9Q...",
+        "count": 2,
+        "percentage": "0.8%"
+      }
+    ],
+    "validators": 15,
+    "potentiallyInactiveMiners": 239
+  }
+}
