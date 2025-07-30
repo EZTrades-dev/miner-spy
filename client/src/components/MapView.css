@@ -1,0 +1,295 @@
+.map-view {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 4rem);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 0;
+}
+
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.map-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.map-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-purple);
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.map-legend {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.map-legend h4 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.legend-items {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.map-container {
+  flex: 1;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.leaflet-map {
+  filter: hue-rotate(200deg) saturate(0.7) brightness(0.9);
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.leaflet-popup-tip {
+  background-color: var(--bg-secondary) !important;
+}
+
+.cluster-popup {
+  min-width: 250px;
+}
+
+.cluster-popup h4 {
+  margin-bottom: 0.5rem;
+  color: var(--accent-purple);
+  font-size: 1.1rem;
+}
+
+.cluster-popup p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.miners-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.miner-item {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--bg-tertiary);
+  border-radius: 6px;
+}
+
+.miner-info {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.more-miners {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* Cluster Details Panel */
+.cluster-details {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  max-height: 80vh;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cluster-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+}
+
+.cluster-details-header h3 {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.close-button:hover {
+  background-color: var(--hover-color);
+  color: var(--text-primary);
+}
+
+.cluster-info {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cluster-info p {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.miners-table {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.miners-table h4 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.miners-table .table-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.miners-table .table {
+  font-size: 0.8rem;
+}
+
+.miners-table .table td {
+  padding: 0.75rem 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .cluster-details {
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin-top: 1.5rem;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .map-header h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .map-stats {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .legend-items {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .map-container {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .legend-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
